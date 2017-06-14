@@ -1,4 +1,4 @@
 FROM centos:7
 
-RUN yum update && \
-	yum install -y coreutils util-linux which unzip
+RUN yum -y update && \
+	yum -y install coreutils util-linux which unzip glibc.i686
